@@ -33,17 +33,6 @@ liveReloadServer.server.once("connection", () => {
   }, 100);
 });
 
-// dbConnection();
-// mongoose
-//   .connect("mongodb+srv://app:AR@cluster0.jicem9x.mongodb.net/")
-//   .then(() => {
-//     app.listen(port, () => {
-//       console.log(`http://localhost:${port}/`);
-//     });
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
 mongoose
   .connect(DB)
   .then(() => {
